@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const missingNumber = (arr) => {
+        arr = arr.sort();
+        var miss = [] 
+        n = arr.length;
+        for (let i = arr[0]; i < arr[n]; i++) {
+            if (arr.includes(i) === false) {
+               miss.push[i]
+            }
+        }
+        return (miss);   
+    };
+    var arr = [];
+    var count = parseInt(prompt("Hãy nhập vào số số nhà đã dán: "));
+    for (let i = 0; i < count; i++) {
+        var house = parseInt(prompt("Số nhà tiếp theo của dãy "));
+        arr.push(house)
+    };
+    
+    console.log(missingNumber(arr));
+</script>
+</html>
